@@ -25,9 +25,9 @@ class Ship(RoomObject):
         """
         
         if key[pygame.K_w]:
-            self.y_speed = -10
+            self.y -= 10
         elif key[pygame.K_s]:
-            self.y_speed = 10
+            self.y += 10
             
     def keep_in_room(self):
         """
