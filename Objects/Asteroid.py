@@ -49,7 +49,7 @@ class Asteroid(RoomObject):
         if self.x + self.width < 0:
             print("asteroid deleted")
             self.room.delete_object(self)
-            
+
     def handle_collision(self, other, other_type):
         """
         Handles the collision events for the Asteroid
